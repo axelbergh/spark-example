@@ -13,6 +13,5 @@ class SerializationExample {
     doubles.foreach(println)
   }
 
-  // 
   def double(n: Int) = 2 * n
 }

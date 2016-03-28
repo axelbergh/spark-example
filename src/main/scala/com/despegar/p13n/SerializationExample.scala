@@ -8,9 +8,11 @@ class SerializationExample {
   val rdd = context.parallelize(List(1, 2, 3))
 
   def foo = {
+    // para ejecutar el map, se tiene que serializar todo el objeto
     val doubles = rdd.map(double).collect
     doubles.foreach(println)
   }
 
+  // 
   def double(n: Int) = 2 * n
 }

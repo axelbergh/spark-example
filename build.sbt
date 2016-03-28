@@ -16,7 +16,8 @@ resolvers ++= Seq(
 
 libraryDependencies ++= List(
         "org.scalatest" %% "scalatest" % "2.2.4" % "test",
-        "org.apache.spark" %% "spark-core" % "1.6.1" withSources() withJavadoc()
+        "org.apache.spark" %% "spark-core" % "1.6.1" withSources() withJavadoc(),
+        "joda-time" % "joda-time" % "2.9.2" withSources() withJavadoc()
         )
         
 EclipseKeys.withSource := true

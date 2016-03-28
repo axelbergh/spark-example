@@ -16,7 +16,7 @@ sbt assembly
 scripts/runFatjar.sh
 
 ## Job server
-curl --form "jarFile=@target/scala-2.11/spark-example.jar" jobserver-rc-00.servers.despegar.it:9290/spark-scheduler/jars/spark-example
+curl --form "jarFile=@target/scala-2.11/spark-example.jar" [jobserverurl]/spark-scheduler/jars/spark-example
 
-postman -> http://jobserver-rc-00.servers.despegar.it:9290/spark-scheduler/admin/jobs/spark-example
+postman -> http://[jobserverurl]/spark-scheduler/admin/jobs/spark-example
 //TODO: agregar la conf del ejemplo en jobserver

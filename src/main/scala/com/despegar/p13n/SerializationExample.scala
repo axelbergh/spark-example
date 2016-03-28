@@ -14,4 +14,6 @@ class SerializationExample {
   }
 
   def double(n: Int) = 2 * n
+  
+  val double2 = (n: Int) => 2 * n
 }

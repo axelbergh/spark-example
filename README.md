@@ -15,6 +15,9 @@ sbt assembly
 
 scripts/runFatjar.sh
 
+## Streaming
+scripts/streamingExample.sh
+
 ## Job server
 curl --form "jarFile=@target/scala-2.11/spark-example.jar" [jobserverurl]/spark-scheduler/jars/spark-example
 
